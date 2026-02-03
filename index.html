@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Influence AI Studio</title>
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#0B0F19; color:white; }
+header { padding:20px; display:flex; justify-content:space-between; align-items:center; background:#0F1424; }
+button { background:#3B82F6; color:white; border:none; padding:10px 16px; border-radius:8px; cursor:pointer; }
+.hero { text-align:center; padding:80px 20px; }
+.card { background:#111827; padding:20px; border-radius:16px; max-width:900px; margin:20px auto; }
+#preview img { max-width:100%; border-radius:12px; }
+.footer { text-align:center; padding:20px; opacity:0.7; }
+</style>
+</head>
+<body>
+<header>
+  <div><strong>Influence AI Studio</strong></div>
+  <div>
+    <button onclick="alert('Login coming soon')">Login</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Create AI Influencers in Seconds</h1>
+  <p>Generate images, video concepts, and voice scripts with one click.</p>
+  <button onclick="generate()">Generate Sample Influencer</button>
+</section>
+
+<section class="card" id="preview">
+  <h2>Your Creation</h2>
+  <p id="prompt">Click generate to see a result.</p>
+  <img id="img" src="" />
+</section>
+
+<div class="footer">© Influence AI Studio</div>
+
+<script>
+function generate(){
+  document.getElementById("prompt").innerText =
+   "Ultra-realistic luxury influencer in penthouse, golden hour lighting, cinematic, 8k quality.";
+  document.getElementById("img").src =
+   "https://images.unsplash.com/photo-1496449903678-68ddcb189a24?w=800";
+}
+</script>
+</body>
+</html>
